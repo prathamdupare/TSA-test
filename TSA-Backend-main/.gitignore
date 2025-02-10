@@ -1,0 +1,49 @@
+# Node.js (for both backend and frontend if you're using Node)
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+bower_components/
+
+# Build directories (for frontend build)
+dist/
+build/
+public/
+
+# React Native (if applicable)
+ios/ /android/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# VS Code settings
+.vscode/
+
+# Coverage reports (for testing)
+coverage/
+
+# IDE files (you can add your IDE-specific files here)
+.idea/
+*.iml
+
+# Backend Python, if applicable
+*.pyc
+__pycache__/
+
+# Backend Ruby, if applicable
+*.gem
+*.rvmrc
+*.ruby-version
+log/*
+tmp/*
