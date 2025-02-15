@@ -89,7 +89,7 @@ submitButton.addEventListener('click', async () => {
     formData.append('sessions', sessions);
     
 
-    const apiUrl = 'https://tsa-backend-thuu.onrender.com';
+    const apiUrl = 'https://tsa-backend.fosspage.tech';
 
     try {
       

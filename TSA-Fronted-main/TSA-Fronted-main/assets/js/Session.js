@@ -1,7 +1,7 @@
 var Sessiondata = []
 
 async function fetchSessionData(type) {
-    const response = await fetch("https://tsa-backend-thuu.onrender.com/api/session");
+    const response = await fetch("https://tsa-backend.fosspage.tech/api/session");
     const data = await response.json().then((data)=>{
         Sessiondata = data
         renderCards(data, type);
@@ -22,7 +22,7 @@ async function fetchSessionData(type) {
       <div class="bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
   <!-- Image Section -->
   <div class="relative">
-    <img loading="lazy" src="https://tsa-backend-thuu.onrender.com/${session.Image}" alt="${session.name}" class="w-full max-h-[20vh] object-cover">
+    <img loading="lazy" src="https://tsa-backend.fosspage.tech/${session.Image}" alt="${session.name}" class="w-full max-h-[20vh] object-cover">
     <div class="absolute top-0 bg-gray-500 bg-opacity-30 h-full w-full"></div>
   </div>
 
@@ -118,7 +118,7 @@ async function fetchSessionData(type) {
     document.body.style.overflow = "hidden";
     sessionModel.classList.remove("hidden");
     sessionHeading.textContent = session.name.toUpperCase();
-    sessionImage.src = `https://tsa-backend-thuu.onrender.com/${session.Image}`; // Assuming session object has an image property
+    sessionImage.src = `https://tsa-backend.fosspage.tech/${session.Image}`; // Assuming session object has an image property
     sessionDescription.innerHTML = session.description; // Assuming session object has a description property
     sessionDuration.textContent = `Duration: 45 min to 1 Hours`; // Assuming session object has a duration property
     sessionPrice.textContent = `Price: ₹${session.price}`; // Assuming session object has a price property
@@ -170,7 +170,7 @@ async function fetchSessionData(type) {
       subject: "Session Booking" // Set email subject
     };
 
-    const apiUrl = 'https://tsa-backend-thuu.onrender.com'; // Update with your backend URL
+    const apiUrl = 'https://tsa-backend.fosspage.tech'; // Update with your backend URL
     if (!sessionPaymentOption.checked) {
       // If payment option is checked, proceed with payment
       
@@ -285,7 +285,7 @@ async function fetchSessionData(type) {
   }
 
   function verifySessionPayment(paymentDetails, formData, orderId, amount, user) {
-    const apiUrl = 'https://tsa-backend-thuu.onrender.com';
+    const apiUrl = 'https://tsa-backend.fosspage.tech';
     fetch(`${apiUrl}/api/payments/verify`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },

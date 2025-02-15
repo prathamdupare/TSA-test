@@ -1,5 +1,5 @@
 // API URL
-const apiUrl = 'https://tsa-backend-thuu.onrender.com'; // Replace with your API endpoint
+const apiUrl = 'https://tsa-backend.fosspage.tech'; // Replace with your API endpoint
 
 // Container to hold blog cards
 const blogContainer = document.getElementById('blog-container');

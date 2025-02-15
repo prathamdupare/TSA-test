@@ -70,7 +70,7 @@ Object.entries(categories).forEach(([key, value]) => {
   function showEditModal(blog) {
     // Populate the form with blog data
     
-    const apiUrl = 'https://tsa-backend-thuu.onrender.com'
+    const apiUrl = 'https://tsa-backend.fosspage.tech'
    
   
     document.getElementById('blogId').value = blog._id;

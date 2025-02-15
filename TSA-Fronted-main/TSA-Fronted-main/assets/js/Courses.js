@@ -5,7 +5,7 @@
 // ]
 
 async function fetchCourses() {
-    const apiUrl = 'https://tsa-backend-thuu.onrender.com'; // Replace with your API endpoint
+    const apiUrl = 'https://tsa-backend.fosspage.tech'; // Replace with your API endpoint
     try {
         const response = await fetch(`${apiUrl}/api/course`);
         if (!response.ok) {
@@ -46,7 +46,7 @@ function createCard(session,i) {
       <div class="relative min-h-full  shadow-md rounded-lg overflow-hidden border border-gray-200">
   <!-- Image Section -->
   <div class="relative">
-    <img src="${`https://tsa-backend-thuu.onrender.com/${session.image}`}" alt="${session.name}" class="w-full  min-h-[20vh] max-h-[20vh] object-cover" loading="lazy">
+    <img src="${`https://tsa-backend.fosspage.tech/${session.image}`}" alt="${session.name}" class="w-full  min-h-[20vh] max-h-[20vh] object-cover" loading="lazy">
     <div class="absolute top-0 bg-gray-500 bg-opacity-30 h-full w-full"></div>
   </div>
 
@@ -118,7 +118,7 @@ const openCourseModel = (course) => {
   courseModel.classList.remove("hidden");
   document.body.style.overflow = "hidden";
   courseHeading.textContent = course.name;
-  courseImage.src = `https://tsa-backend-thuu.onrender.com/${course.image}`; // Assuming course object has an image property
+  courseImage.src = `https://tsa-backend.fosspage.tech/${course.image}`; // Assuming course object has an image property
   courseDescription.innerHTML = `${course.description}`; // Assuming course object has a description property
   enrollButton.textContent = `Enroll for ₹${course.price}`; // Assuming course object has a price property
   
@@ -153,7 +153,7 @@ enrollButton.addEventListener("click", () => {
     subject: "Course Enroll" // Set email subject
   };
 
-  const apiUrl = 'https://tsa-backend-thuu.onrender.com'; // Update with your backend URL
+  const apiUrl = 'https://tsa-backend.fosspage.tech'; // Update with your backend URL
 
   fetch(`${apiUrl}/api/course/enquiry`, {
     method: 'POST',

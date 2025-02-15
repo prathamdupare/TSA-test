@@ -13,7 +13,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     };
 
     // Send a fetch request to the API
-    fetch('https://tsa-backend-thuu.onrender.com/api/contact/enquiry', {
+    fetch('https://tsa-backend.fosspage.tech/api/contact/enquiry', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

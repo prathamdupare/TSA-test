@@ -83,7 +83,7 @@ previewButton.addEventListener('click', () => {
     formData.append('category', category);
     formData.append('image', Img);
   
-    const apiUrl = 'https://tsa-backend-thuu.onrender.com';
+    const apiUrl = 'https://tsa-backend.fosspage.tech';
   
     try {
       // Debugging: Log FormData entries
